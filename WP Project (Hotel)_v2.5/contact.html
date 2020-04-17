@@ -1,0 +1,169 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+<title>HOTEL LUXURY-CONTACT</title>
+</head>
+<style>
+#wall1{
+background-image:url(blur_contact.jpeg);
+background-size: cover;
+background-color:#D5A173;
+}
+
+#tst
+{background-color:#D5A173;
+}
+
+#content_text1
+{
+	font-size:16px;
+	line-height:24px;
+	margin-left:13px;
+	margin-right:13px;
+	color:black;
+}
+td
+{
+	padding:25px;
+	text-align: center;
+}
+</style>
+<body id="wall1">
+    <div id="page">
+        <div class="topNaviagationLink"><a href="home.html">Home</a></div>
+        <div class="topNaviagationLink"><a href="index2.html">Book Now</a></div>
+        <div class="topNaviagationLink"><a href="Experience.html">Experience</a></div>
+        <div class="topNaviagationLink"><a href="services.html">Services</a></div>
+	    <div class="topNaviagationLink"><a href="contact.html">Contact</a></div>
+	</div>
+	
+	<div id="f1_container">
+	<div id="f1_card" class="shadow">
+	  <div class="front face">
+		<div id="headerTitle">CLARION HOTEL</div>
+            <div id="headerSubtext">Book your room now.</div>
+			<br><br><br>
+		<img src="coffee.jpeg" width=930px height=480px />	
+	  </div>
+	  <div class="back face center">
+		<h1>THE CLARION HOTEL</h1><br><br>
+		<h1>Experince true luxury with us.</h1>
+		
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		
+		<h2>BOOK TICETS NOW A NEW EXPE<font color="white">RINCE AWAITS.</font></h2>
+	  </div>
+	</div>
+	</div>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+    <div class="contentBox">
+    		<div class="innerBox">
+        		<div class="contentTitle">CONTACT US NOW</div><br />
+    		<div class="contentText">
+    			<h2>Our team will get back to you as soon as possible</h2>
+    <form name="myform" action="create_table.php" action="connect.php">
+		<table>
+		<tr>
+			<td>First Name: </td><td><input type="text" name="fname" ></td>
+		</tr>
+		<tr>
+			<td>Last Name: </td> <td><input type="text" name="lname"></td> 
+		</tr>
+		<tr>
+			<td>Phone Number:</td> <td><input type="text" name="phname"></td>
+		</tr>
+		<tr>
+			<td>Email Id: </td><td><input type="text" name="eidname"></td>
+		</tr>
+		<tr>
+			<td><center><input type="submit" value="Submit" onClick="return myFunction()"></td></center>
+		</tr>
+		</table> 
+
+
+	</form>
+	<script>
+		function myFunction()
+		{	
+		
+			var n1=(document.myform.fname.value).length;
+			var n2=(document.myform.lname.value).length; 
+			var n3=(document.myform.phname.value).length;
+			
+			
+			var lio1 = document.myform.eidname.value.lastIndexOf("@");
+			var lio2 = document.myform.eidname.value.lastIndexOf(".");
+			var lio3 = lio2-lio1;
+		
+			
+			if(document.myform.fname.value=="")
+			{
+				alert("No value");
+				return false;
+			}
+			if((n1<7) || (n2>12))
+			{
+				alert("Wrong size");
+				return false;
+			}
+			if (isNaN(document.myform.fname.value)==false) 
+			{
+				alert("Integers are not accepted");
+				return false;
+			}
+
+			
+			if(document.myform.lname.value=="")
+			{
+				alert("No value");
+				return false;
+				}
+			if((n2<7) || (n2>10))
+			{
+				alert("Wrong size");
+				return false;
+			}
+			if (isNaN(document.myform.lname.value)==false) 
+			{
+				alert("Integers are not accepted");
+				return false;
+			}
+
+			
+			if(document.myform.phname.value=="")
+			{
+				alert("No value");
+				return false;
+			}
+			if(n3!=10)
+			{
+				alert("Wrong size");
+				return false;
+			}
+			
+			
+			if(document.myform.eidname.value=="")
+			{
+				alert("No value");
+				return false;
+				}
+			if((lio3>7) || (lio3<4))
+			{
+				alert("Wrong size");
+				return false;
+			}
+		}
+	</script>	
+
+    		</div>
+		</div>
+	</div>
+   
+       </body>
+</html>

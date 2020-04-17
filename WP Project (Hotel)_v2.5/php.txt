@@ -1,0 +1,30 @@
+1.wap to display your nam with php
+2.wap for function call for local and global variables
+3.wap to find a even and odd number by using static variables
+4.wap to find largest of 3 numbers
+5.wap with switch statemant 
+6.wap to input is grade variable which is b
+	case a is excellent
+	case b well done
+	case c just passed
+	default invalid grade
+7.wap to concadinate the following strings:
+	priya shah yean 1978
+	rich martin yean 1980
+	amit robin yea 1990
+	also return the length of the string
+8.wap to check whether given number is palindrome or not
+9.wap take an array and find the sum of the array
+10.wap to take a array and find a sorted array in ascneding order
+11.wap to find the armstrong of the number	
+<html>
+<head></head>
+<style>
+</style>
+<script>
+</script>
+<body>
+<form>
+</form>
+</body>
+</html>    

@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+<title>CLARION HOTEL-BOOKING</title>
+</head>
+<style>
+#wall1{
+background-image:url(beach.jpg);
+background-size: cover;
+background-color:#D5A173;
+}
+
+#tst
+{background-color:#FFFFFF;
+}
+p{
+
+    color: black;
+}
+#content_text1
+{
+	font-size:16px;
+	line-height:24px;
+	margin-left:13px;
+	margin-right:13px;
+	color:black;
+}
+</style>
+<body id="wall1">
+    <div id="page">
+        <div class="topNaviagationLink"><a href="home.html">Home</a></div>
+        <div class="topNaviagationLink"><a href="index2.html">Book Now</a></div>
+        <div class="topNaviagationLink"><a href="Experience.html">Experience</a></div>
+        <div class="topNaviagationLink"><a href="services.html">Services</a></div>
+	    <div class="topNaviagationLink"><a href="contact.html">Contact</a></div>
+	</div>
+	
+		<div id="f1_container">
+	<div id="f1_card" class="shadow">
+	  <div class="front face">
+		<div id="headerTitle">CLARION HOTEL</div>
+            <div id="headerSubtext">Book your room now.</div>
+			<br><br><br>
+		<img src="hotel.jpeg" width=930px height=480px />	
+	  </div>
+	  <div class="back face center">
+		<h1>THE CLARION HOTEL</h1><br><br>
+		<h1>Experince true luxury with us.</h1>
+		
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br>
+		
+		<h2>BOOK TICETS NOW A NEW EXPE<font color="white">RINCE AWAITS.</font></h2>
+	  </div>
+	</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	
+    <div class="contentBox" id="tst">
+    	<div class="innerBox">
+        	<div class="contentTitle">BOOKING:</div><br />
+          <div class="contentText"><p>Book your rooms here!</p><br /></div> 
+            <table>
+            <form name="iform" action="InsertForm.php" method="post" >
+                <tr>
+                <td>First Name:</td><td><input type="text" name="fname"><br><br></td>
+                </tr>
+                <tr>
+                <td>Last Name:</td><td><input type="text" name="lname" required><br><br></td>
+                </tr>
+                <tr>
+                <td>Phone Number: +91</td><td><input type="text" name="phno" required maxlength="10"><br><br></td>
+                </tr>
+                <tr>
+                <td>Email:</td><td><input type="text" name="email" required><br><br></td>
+                </tr>
+                <tr>
+                <td>Check In Date:</td><td><input type="text name="chkin" required></td><td> Check Out Date:<input type="text name="chkout" required> <br></td>
+                </tr>
+                <tr>
+                <td><input type="submit" value="Submit"></td>
+                </tr>
+            </form>
+            </table>
+        </div>
+    </div>      
+</body>
+</html>

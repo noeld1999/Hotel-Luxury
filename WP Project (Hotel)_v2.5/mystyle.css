@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 13px;
+	color: black;
+	background: #014D5D url(background.png);
+	background-repeat:repeat-x;
+}
+*
+{
+  margin: 0 auto 0 auto;
+ text-align:left;}
+ 
+
+img {vertical-align: middle;}
+/*Home Page*/
+#page
+{
+  display: block; 
+  height:auto;
+  position: relative; 
+  overflow: hidden; 
+  width: 1200px;
+}
+
+.topNaviagationLink
+{
+text-align: CENTER;
+position:relative;
+margin-top:30px;
+font-size:16px;
+margin-left:10px;
+width:100px;
+height: 35px;
+line-height: 35px;
+float:left;
+color:black;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.topNaviagationLink a
+{
+text-decoration:none;
+color:black;
+}
+
+.topNaviagationLink a:hover
+{
+text-align:CENTER;
+border-bottom:none;
+color:#0C61C9;
+display: block;
+width:100px;
+height: 35px;
+line-height: 35px;
+background-image:url(tab.png);
+
+}
+
+
+#mainPicture
+{
+width:970px;
+height:500px;
+background-color:#FFFFFF;
+}
+
+#mainPicture .picture
+{
+position:relative;
+width:930px;
+height:480px;
+top:10px;
+background-image:url(lobby.jpeg);
+background-repeat:no-repeat;
+margin-left:19px;
+}
+
+#headerTitle
+{
+position:relative;
+top:30px;
+left:40px;
+font-size:50px;
+color:black;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#headerSubtext
+{
+position:relative;
+top:30px;
+left:50px;
+font-size:14px;
+color:Grey;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+.contentBox
+{
+width:1200px;
+height:auto;
+margin-top:10px;
+}
+
+.contentBox .innerBox
+{
+position:relative;
+width:1050px;
+height:auto;
+top:10px;
+margin-left:75px;
+
+background-repeat:repeat-x;
+padding-bottom:35px;
+}
+
+.contentTitle
+{
+font-size:35px;
+margin-bottom:0px;
+padding-top:18px;
+margin-left:15px;
+margin-top:15px;
+}
+
+.contentText
+{
+font-size:16px;
+line-height:24px;
+margin-left:13px;
+margin-right:13px;
+color:white;
+}
+
+#footer {
+
+width: 670px;
+height:16px;
+background: url(footer.png) no-repeat;
+text-align:center;
+font-size:9px;
+font-family: 'Josefin Sans', sans-serif;
+color:#386172;
+padding-top:5px;
+}
+
+#footer a
+{
+text-decoration:none;
+font-size:9px;
+color:#386172;
+}
+
+html, body {
+text-align: center;
+}
+p {text-align: left;}
+
+/*MORE STUFF*/
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 930px;
+  height: 480px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateX(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateX(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  background-image:url("lobby_back.jpg");
+  background-size: 930px 480px;
+  /*background-color: grey;*/
+}
+
+/*Experience Page*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 9px;
+  width: 9px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*GRADIENT BUTTON*/
+div.button{
+ position:left;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 200px;
+ height: 60px;
+ text-align: center;
+ line-height: 60px;
+ color: #fff;
+ font-size: 24px;
+ text-transform: uppercase;
+ text-decoration: none;
+ font-family: 'Josefin Sans', sans-serif;
+ box-sizing: border-box;
+ background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+ background-size: 400%;
+ border-radius: 30px;
+ z-index: 1;
+}
+.button:hover
+{
+ animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+ 0%
+ {
+  background-position: 0%;
+ }
+ 100%
+ {
+  background-position: 400%;
+ }
+}
+.button:before
+{
+ content: '';
+ position: absolute;
+ top: -5px;
+ left: -5px;
+ right: -5px;
+ bottom: -5px;
+ z-index: -1;
+ background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+ background-size: 400%;
+ border-radius: 40px;
+ opacity: 0;
+ transition: 0.5s;
+	text-decoration:none;
+ 
+}
+.button:hover:before
+{
+ 
+ filter: blur(20px);
+ opacity:1;
+ animation: animate 5s linear infinite;
+}
+
+a{
+	text-decoration:none;
+	
+}
+

@@ -1,0 +1,208 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+<title>CLARION HOTEL-BOOKING</title>
+</head>
+<style>
+#wall1{
+background-image:url(beach.jpg);
+background-size: cover;
+background-color:#D5A173;
+}
+
+#tst
+{background-color:#FFFFFF;
+}
+p{
+
+    color: black;
+}
+#content_text1
+{
+	font-size:16px;
+	line-height:24px;
+	margin-left:13px;
+	margin-right:13px;
+	color:black;
+}
+</style>
+<body id="wall1">
+    <div id="page">
+        <div class="topNaviagationLink"><a href="home.html">Home</a></div>
+        <div class="topNaviagationLink"><a href="index2.html">Book Now</a></div>
+        <div class="topNaviagationLink"><a href="Experience.html">Experience</a></div>
+        <div class="topNaviagationLink"><a href="services.html">Services</a></div>
+	    <div class="topNaviagationLink"><a href="contact.html">Contact</a></div>
+	</div>
+	
+		<div id="f1_container">
+	<div id="f1_card" class="shadow">
+	  <div class="front face">
+		<div id="headerTitle">CLARION HOTEL</div>
+            <div id="headerSubtext">Book your room now.</div>
+			<br><br><br>
+		<img src="hotel.jpeg" width=930px height=480px />	
+	  </div>
+	  <div class="back face center">
+		<h1>THE CLARION HOTEL</h1><br><br>
+		<h1>Experince true luxury with us.</h1>
+		
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br>
+		
+		<h2>BOOK TICETS NOW A NEW EXPE<font color="white">RINCE AWAITS.</font></h2>
+	  </div>
+	</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	
+    <div class="contentBox" id="tst">
+    	<div class="innerBox">
+        	<div class="contentTitle">BOOKING:</div><br />
+		  <div class="contentText"><p>Book your rooms here!</p><br /></div>
+		  
+
+
+
+<form name="mform" action="connect.php">
+
+<table border="2" cellpadding="20">
+<th colspan="20">Enter Details</th>
+
+<tr>
+<td><br>First Name : <input type="text" name="fname"><br><br></td>
+</tr>
+
+<tr>
+<td><br>Last Name : <input type="text" name="lname"><br><br></td>
+</tr>
+
+<tr>
+<td><br>Phone Number : <input type="text" name="ph"><br><br></td>
+</tr>
+
+<tr>
+<td><br>E-mail ID : <input type="text" name="eid"><br><br></td>
+</tr>
+
+<tr>
+<td><br>Please select room type:<br><br><br><select name="roomtype">
+    <option value="Singlesuite">Single Suite</option>
+    <option value="Singleregular">Single Regular</option>
+    <option value="Doublesuite">Double Suite</option>
+    <option value="Doubleregular">Double Regular</option>
+  </select><br><br></td>
+</tr>
+
+<tr>
+<td><br>Enter Number of Rooms : <input type="text" name="roomno"><br><br></td>
+</tr>
+
+
+<tr>
+<td><br><center><input type =button  value="BOOK ROOM(S)" onclick="return func();"><center></td>
+</tr>
+
+
+</table><br>
+
+</form>
+
+<script>
+function func() {
+	
+	var x= document.mform.fname.value;
+	var y=x.length;
+
+	if (x=="")
+	{
+		alert("First name should not be null ");
+		return false;
+    	} 
+	else if (isNaN(x) == false)
+	{
+		alert("First name should not be a number ");
+		return false;
+	}
+	
+	else if (y<7 || y>12 )
+	{
+		alert("First name should be 7-12 characters long ");
+		return false;
+	}
+
+	var a= document.mform.lname.value;
+	var b=a.length;
+
+	if (a=="")
+	{
+		alert("Last name should not be null ");
+		return false;
+    	} 
+	else if (isNaN(a) == false)
+	{
+		alert("Last Name should not be a number ");
+		return false;
+	}
+	
+	else if (b<7 || b>10 )
+	{
+		alert("Last name should be 7-10 characters long ");
+		return false;
+	}
+
+	var j= document.mform.ph.value;  
+	var k=j.length;
+	
+                 if (j=="")
+	{
+		alert("Phone Number shouldn't be null");
+		return false;
+    	} 
+
+	else if (isNaN(j) == true)
+	{
+		alert("Enter Number. No characters allowed");
+		return false;
+	}
+	
+	else if ( k!=10)
+	{
+		alert("Enter 10 Digit Number only");
+		return false;
+	}
+
+	var e=document.mform.eid.value;
+	var f=e.lastIndexOf("@");
+	var g=e.lastIndexOf(".");
+	var h = g-f;
+	
+	if(e=="")
+	{
+		alert("Email Id shouldn't be null");
+		return false;
+	}
+	
+	else if(h>7 || h < 4)
+	{
+		alert("Email Id is incorrect");
+		return false;
+	}
+	var o=document.mform.Rooms.value;
+	if(o<=0 || o =="")
+	{
+		alert("Number should be greator than 1");
+		return false;
+	}
+	else if(o>=7)
+	{
+		alert("Rooms number cannot be greator than 6")
+	}
+    
+}
+</script>
+</body>
+</html>
